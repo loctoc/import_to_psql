@@ -1,0 +1,9 @@
+{
+  "Sender Location": {
+    "needIndex": true
+  },
+  "Sent At": {
+    "fieldType": "timestamp",
+    "needIndex": true
+  }
+}
