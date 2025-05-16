@@ -1,6 +1,6 @@
 {
   "name": "import_to_psql",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Transfer Excel/CSV/JSONL data to PostgreSQL tables",
   "type": "module",
   "bin": {

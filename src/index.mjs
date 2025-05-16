@@ -7,10 +7,9 @@ import fs from 'fs';
 import path from 'path';
 
 import { sendSlackNotification } from '../lib/notifications.mjs';
-import { initializeDB } from '../lib/db.mjs';
+import { initializeDB, closeDB } from '../lib/db.mjs';
 import handleXLSX from '../lib/handleXLSX.mjs';
 import handleJSONL from '../lib/handleJSONL.mjs';
-
 // Load environment variables first
 dotenv.config();
 
@@ -112,6 +111,7 @@ async function main() {
     } catch (dbError) {
       console.error('Error closing database connection:', dbError.message);
     }
+    process.exit(0);
   }
 }
 
